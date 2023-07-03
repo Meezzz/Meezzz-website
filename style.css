@@ -1,0 +1,749 @@
+header {
+  margin: auto;
+  width: 100%;
+  max-height: 40vh;
+}
+#img {
+  overflow: auto;
+}
+#img img{
+  display: block;
+  margin: 0 auto;
+  margin-top: 7vh;
+  height: auto;
+  width: 100%;
+  max-height: 30vh;
+  object-fit: cover;
+  position: static;
+}
+nav {
+  background-color: #000000;
+  width: calc(100% - 16px);
+  height: relative;
+  max-height: 7vh;
+  display: inline-block;
+  position: fixed;
+  z-index: 2;
+}
+@media (max-width: 900px) {
+  #Releases, #Bookings, #About, #Demo {
+    position: absolute; 
+    left: -999em;
+  }
+}
+@media (min-width: 1500px) {
+  nav {
+    background-color: #000000;
+    width: 100%;
+    max-width: 1500px;
+    height: relative;
+    max-height: 7vh;
+    display: inline-block;
+    align-items: center;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media (min-width: 900px) {
+  #hamburger-menu {
+    display: none !important;
+  }
+}
+body {
+  background-color: #000000;
+  height: 100%;
+  min-height: 100%;
+  position: relative;
+  margin-top: 0vh;
+}
+#logo img{
+  width: 7vh;
+  height: auto;
+  object-fit: cover;
+  filter: brightness(0) invert(1);
+  margin-top: 2.5vh;
+}
+#logo {
+  float: left;
+  max-padding
+  min-padding-left: 4vh;
+  margin-top: -4vh;
+  height: 100px;
+  display: inline-block;
+}
+#logo a:hover{
+  filter: invert(7%) sepia(2%) saturate(6749%) hue-rotate(180deg) brightness(91%) contrast(87%);
+}
+nav a{
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+@keyframes navbarOmlaag {
+  from {color: white}
+  from {background-color: black}
+  from {line-height: 7.2vh}
+  to {color: #a6c9f2}
+  to {background-color: #232e34}
+  to {line-height: 11vh}
+}
+@keyframes navbarOmhoog {
+  from {color: #a6c9f2}
+  from {background-color: #232e34}
+  from {line-height: 11vh}
+  to {color: white}
+  to {background-color: black}
+  to {line-height: 7.2vh}
+}
+
+#Logotext {
+  font-size: xx-large;
+  text-align: center;
+  display: inline;
+  margin-left: 3vh;
+  line-height: 7.2vh;
+  height: 100px;
+  width: 100px;
+  z-index: inherit;
+}
+#Logotext a:hover {
+  animation-name: navbarOmlaag;
+  animation-duration: 0.5s;
+  color: #a6c9f2;
+  background-color: #232e34;
+  line-height: 11vh
+}
+#Logotext :not(:hover){
+  animation-name: navbarOmhoog;
+  animation-duration: 0.5s;
+}
+#Releases {
+  font-size: x-large;
+  text-align: center;
+  display: inline;
+  margin-left: 3vh;
+  line-height: 7.2vh;
+  float: right;
+}
+#Releases a:hover {
+  animation-name: navbarOmlaag;
+  animation-duration: 0.5s;
+  color: #a6c9f2;
+  background-color: #232e34;
+  line-height: 11vh
+}
+#Releases :not(:hover){
+  animation-name: navbarOmhoog;
+  animation-duration: 0.5s;
+}
+#Bookings {
+  font-size: x-large;
+  text-align: center;
+  display: inline;
+  margin-left: 3vh;
+  line-height: 7.2vh;
+  float: right;
+}
+#Bookings a:hover {
+  animation-name: navbarOmlaag;
+  animation-duration: 0.5s;
+  color: #a6c9f2;
+  background-color: #232e34;
+  line-height: 11vh
+}
+#Bookings :not(:hover){
+  animation-name: navbarOmhoog;
+  animation-duration: 0.5s;
+}
+
+header {
+    -webkit-text-size-adjust: none;
+}
+
+#About {
+  font-size: x-large;
+  text-align: center;
+  display: inline;
+  margin-left: 3vh;
+  line-height: 7.2vh;
+  float: right;
+}
+#About a:hover {
+  animation-name: navbarOmlaag;
+  animation-duration: 0.5s;
+  color: #a6c9f2;
+  background-color: #232e34;
+  line-height: 11vh
+}
+#About :not(:hover){
+  animation-name: navbarOmhoog;
+  animation-duration: 0.5s;
+}
+#Demo {
+  font-size: x-large;
+  text-align: center;
+  display: inline;
+  margin-left: 3vh;
+  line-height: 7.2vh;
+  float: right;
+  margin-right: 2vw;
+}
+#Demo a:hover {
+  animation-name: navbarOmlaag;
+  animation-duration: 0.5s;
+  color: #a6c9f2;
+  background-color: #232e34;
+  line-height: 11vh
+}
+#Demo :not(:hover){
+  animation-name: navbarOmhoog;
+  animation-duration: 0.5s;
+}
+footer {
+  background-color: black;
+  justify-content: center;
+  height: 150px;
+  min-width: 100%;
+}
+#Socials {
+  display: flex;
+  justify-content: center;
+  padding-right: 44px;
+  max-width: 100%;
+}
+@media screen and (max-width: 480px) {
+  #Instagram img, #Itunes img {
+    display: none !important;
+  }
+}
+#Socials img:hover{
+  filter: invert(70%);
+}
+
+#Instagram img{
+  filter: invert(100%);
+  width: 70px;
+  display: inline;
+}
+#Instagram {
+  width: 70px;
+  display: inline;
+  margin-top: 20px;
+}
+#Spotify img{
+  filter: invert(100%);
+  width: 80px;
+  display: inline;
+}
+#Spotify {
+  width: 83px;
+  display: inline;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+#YouTube img{
+  filter: invert(100%);
+  width: 70px;
+  display: inline;
+  margin-left: 15px;
+}
+#YouTube {
+  width: 70px;
+  display: inline;
+  margin-top: 20px;
+}
+#Soundcloud img{
+  filter: invert(100%);
+  width: 81px;
+  display: inline;
+  margin-left: 32px;
+}
+#Soundcloud {
+  width: 81px;
+  display: inline;
+  margin-top: 13px;
+}
+#Itunes img{
+  filter: invert(100%);
+  width: 70px;
+  display: inline;
+  margin-left: 48px;
+}
+#Itunes {
+  width: 70px;
+  display: inline;
+  margin-top: 20px;
+}
+#Links {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px
+}
+#Homepagelink, #Releaseslink, #Bookingslink, #Aboutlink, #Demolink {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#Links a{
+  text-decoration: unset;
+  color: grey;
+}
+#Links a:hover{
+  text-decoration: underline;
+}
+#Content {
+  width: 100%;
+  height: auto;
+  max-width: 1500px;
+  justify-content: center;
+  margin-top: 20px;
+}
+#ContentIndex {
+  width: 100%;
+  max-width: 1500px;
+  height: auto;
+  margin: auto;
+  justify-content: center;
+  margin-top: 20px;
+	background-image: linear-gradient(to bottom, #000000, #3e2c6d), url("Images/Ground_Forest_003_normal.jpg");
+}
+
+#BlockReleases, #BlockBookings, #BlockAbout, #BlockDemo {
+  width: 95%;
+  height: 200px;
+  max-height: 200px;
+  background-color: #fff;
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  vertical-align: top;
+}
+
+#BlockReleases:hover, #BlockBookings:hover, #BlockAbout:hover, #BlockDemo:hover {
+
+  box-shadow: 0px 0px 50px 0px rgb(255, 255, 255);
+}
+#hamburger-menu {
+  width: 35px;
+  height: 30px;
+  float: right;
+  position:absolute;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: 7px;
+  top: 0; left: 0; bottom: 0; right: 0;
+  display: inline;
+}
+.bar {
+  height: 5px;
+  width: 100%;
+  background-color: white;
+  display: block;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+#bar-1 {
+  transform: translateY(-1px);
+}
+#bar-2 {
+  transform: translateY(8px);
+}
+#bar-3 {
+  transform: translateY(17px);
+}
+.change .bar {
+  background-color: rgb(0, 0, 0);
+}
+.change #bar-1 {
+  transform: translateY(13px) rotateZ(45deg); 
+}
+.change #bar-2 {
+  transform: translateY(8px);
+  opacity: 0;
+}
+.change #bar-3 {
+  transform: translateY(3px) rotateZ(-45deg);
+}
+.menubarnav li a {
+  text-decoration: none;
+  font-size: x-large;
+  color: black;
+  transition: 1s ease;
+}
+.menubarnav li a:hover {
+  text-decoration: underline;
+}
+.menubarnav li {
+  list-style: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 40vh;
+}
+.menubarnav {
+  margin-left: -30vw;
+  position: absolute;
+  opacity: 0;
+  transition: visibility 0s, opacity 0s ease;
+
+  visibility: hidden;
+}
+.change {
+  transition-delay: 0,5s;
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s, opacity 2s ease;
+}
+.menu-bg {
+  width: 0;
+  height: 100vh;
+  background-color: white;
+  transition: 0.3s ease;
+  opacity: 0;
+  float: right;
+  cursor:default;
+  
+}
+.change-bg {
+  height: 100vh;
+  width: 40vw;
+  opacity: 100;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+#Blocks {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  margin-top: -15px;
+}
+#Blocks a {
+  color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+#BlockBookings img{
+  height: 110px;
+  margin-top: 8px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#BlockReleases img {
+  margin-left: auto;
+  margin-right: auto;
+}
+#Blocks img {
+  display: flex;
+  text-align: center;
+  position: relative;
+}
+#BlockAbout img{
+  height: 137px;
+  margin-top: -2px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#BlockDemo img{
+  height: 110px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#BlockReleases h2{
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
+  padding-top: -30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+#BlockBookings h2{
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
+  padding-top: 11px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+#BlockAbout h2{
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
+  margin-top: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+#BlockDemo h2{
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
+  margin-top: 29px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+#ContentReleases h1, #ContentReleases h2{
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-weight: bolder;
+  text-align: center;
+  text-shadow: 0px 0px 30px rgb(75, 128, 155);
+}
+#ContentReleases {
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  padding-top: 1px;
+	background-image: linear-gradient(to bottom, #0f305a, #137bc2, #c25072), url("Images/pexels-brett-sayles-3114462.jpg");
+  position: relative;
+}
+#ContentReleases {
+  display: absolute;
+}
+#ContactForm {
+  margin: auto;
+  width: 100%;
+}
+#ContentContact {
+  width: 100%;
+  min-height: 300px;
+  height: auto;
+  justify-content: center;
+  background-image: linear-gradient(to bottom, rgba(12, 66, 68, 0.897), rgba(70, 7, 49, 0.918)), url("Images/pexels-cliford-mervil-2469122.jpg");
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#ContentContact h1 {
+  font-weight: boldest;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0px 0px 30px white;
+  vertical-align: center;
+}
+#ContentContact h3 {
+  font-weight: boldest;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  text-align: center;
+
+  vertical-align: center;
+  line-height: 40px;
+
+}
+#ContentContact h2 {
+  font-weight: boldest;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  text-align: center;
+
+  line-height: 10px;
+  font-size: xx-large;
+}
+#ContentContact a {
+  color: rgb(83, 83, 83);
+  text-decoration: none;
+  background-color: rgb(255, 255, 255);
+}
+#ContentContact a:hover {
+  color: rgb(190, 190, 190);
+}
+#ContentAbout {
+  width: 100%;
+  max-width: 1500px;
+  height: auto;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+  position: relative;
+  left: 50%; 
+  transform: translateX(-50%);
+}
+#ContentAbout a {
+  color: rgb(178, 200, 235);
+  text-decoration: none;
+}
+#ContentAbout a:hover {
+  text-decoration: underline;
+}
+#imageAbout1 img {
+  width: 1200px;
+  position: absolute;
+  transform: translate(-350px, -230px);
+  display: block;
+}
+#imageAbout1 {
+  width: auto;
+  max-width: 400px;
+  height: 600px;
+
+  position: relative;
+  overflow: hidden;
+  object-fit: cover;
+  display: block;
+}
+#article1 {
+  text-align: center;
+  float: right;
+  width: auto;
+  display: block;
+  margin-top: -600px;
+  margin-left: 420px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 600px;
+  background-color: rgb(145, 145, 145);
+
+}
+#ContentAbout h1{
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  vertical-align: center;
+  font-size: 300%;
+}
+
+#ContentAbout p{
+  font-weight: 400;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  vertical-align: center;
+  font-size: 30px;
+}
+@media (max-width: 1083px) {
+  #article1 {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+  }
+  #imageAbout1 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #imageAbout2 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #article2 {
+    height: auto !important;
+  }
+  #article3 {
+    height: auto !important;
+  }
+  #article4 {
+    height: auto !important;
+  }
+}
+#ContentAbout h2{
+  font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  vertical-align: center;
+  font-size: 40px;
+}
+#article2 {
+  text-align: center;
+  float: right;
+  width: auto;
+  display: block;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: auto;
+  background-color: rgb(182, 145, 145);
+
+}
+
+#article3 {
+  text-align: center;
+  float: left;
+  display: block;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: auto;
+  background-color: rgb(182, 180, 145);
+
+}
+#article4 {
+  text-align: center;
+  float: right;
+  width: auto;
+  display: block;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: auto;
+  background-color: rgb(175, 145, 182);
+  
+}
+@media screen and (min-width: 1200px) {
+  #ContentAbout {
+    transform: scale(0.3, 0.3) !important, translateX(-50%);
+  }
+}
+#ContentDemo {
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  margin-top: 0px;
+  display: inline-block;
+  overflow: visible;
+  background-image: linear-gradient(to bottom, rgba(146, 8, 8, 0.842), rgba(184, 184, 184, 0.849)), url("Images/pexels-brett-sayles-3114462.jpg");
+  border-radius: 20px;
+}
+formDemo {
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  display: block;
+}
+formDemo iframe {
+  display: block;
+  max-width: 80%;
+}
+#bookingForm {
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  display: block;
+}
+#bookingForm iframe {
+  display: block;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+bookingForm {
+  margin: auto;
+  width: 100%;
+}
+#article1, #article2, #article3, #article4 {
+  overflow: hidden; /* Hide any overflowing content */
+  font-size: 16px; /* Set an initial font size */
+}
+#article1 p , #article2 p , #article3 p , #article4 p {
+  width: 100%; /* Ensure the content spans the entire width of the div */
+  height: 100%; /* Ensure the content spans the entire height of the div */
+}
