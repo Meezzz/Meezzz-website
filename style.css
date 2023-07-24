@@ -747,3 +747,8 @@ bookingForm {
   width: 100%; /* Ensure the content spans the entire width of the div */
   height: 100%; /* Ensure the content spans the entire height of the div */
 }
+.gigstarter-button {
+  justify-content: center;
+  display: flex;
+  margin: 0auto;
+}
