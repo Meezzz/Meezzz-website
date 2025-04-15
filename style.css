@@ -76,9 +76,8 @@ body {
 #logo img{
   width: 7vh;
   height: auto;
-  object-fit: cover;
-  filter: brightness(0) invert(1);
-  margin-top: 2.5vh;
+  object-fit: fill;
+  margin-top: 4vh;
 }
 #logo {
   float: left;
